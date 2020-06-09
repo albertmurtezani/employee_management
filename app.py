@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.secret_key = "Secret  Key"
+app.secret_key = "My Very very Secret Key, Impossible to find"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/crudd'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
